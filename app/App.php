@@ -18,7 +18,7 @@ class App
 
         if (count(self::$params) == 1) {
             if (self::$params[0] == 'count') {
-
+                Age::count();
             }
         }
         if (file_exists(self::VIEW_DIR.self::$params[0].'.php')) {
